@@ -1,0 +1,24 @@
+{
+  "name": "gated-commit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gulp lint"
+  },
+  // add pre-commit
+  "pre-commit":{
+      "silent": true,
+      "run":["lint"]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "jshint": "^2.9.3",
+    "jshint-stylish": "^2.2.1",
+    "pre-commit": "^1.1.3"
+  }
+}
